@@ -4,7 +4,7 @@ using Ninject.Modules;
 
 namespace Gibe.DittoProcessors.Vorto.Ninject
 {
-	public class DittoProcessorsModule : NinjectModule
+	public class DefaultDittoProcessorsVortoModule : NinjectModule
 	{
 		public override void Load()
 		{
