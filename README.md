@@ -10,6 +10,7 @@ Ninject Module is available ``` Gibe.DittoProcessors.Vorto.Ninject.DittoVortoPro
 | Processor | Description |
 |:----------|:------------|
 |VortoValue| Return the value of ```GetVortoValue``` of an ```IPublishedContent``` |
+|VortoBreadcrumbsValue| Get a List<> of breadcrumbs relating to the current page |
 
 
 # DittoServices
