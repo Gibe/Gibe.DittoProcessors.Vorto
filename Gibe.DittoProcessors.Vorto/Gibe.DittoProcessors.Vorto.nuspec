@@ -17,6 +17,7 @@
 			<dependency id="System.ValueTuple" version="4.3.0" />
 			<dependency id="Ninject" version="3.3.4" />
 			<dependency id="Gibe.DittoProcessors" version="3.2.0" />
+			<dependency id="Gibe.DittoServices" version="3.2.0" />
 		</dependencies>
 	</metadata>
 	<files>
