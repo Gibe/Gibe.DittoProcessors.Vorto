@@ -241,6 +241,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants.cs" />
+    <Compile Include="Ninject\BaseModule.cs" />
     <Compile Include="Ninject\UrlSuffixLanguageDittoProcessorsVortoModule.cs" />
     <Compile Include="Ninject\DefaultDittoProcessorsVortoModule.cs" />
     <Compile Include="Processors\BaseVortoAttribute.cs" />
@@ -252,6 +253,8 @@
     <Compile Include="Services\UrlLanguageDetectionService.cs" />
     <Compile Include="Wrappers\HttpContextWrapper.cs" />
     <Compile Include="Wrappers\IHttpContextWrapper.cs" />
+    <Compile Include="Wrappers\IVortoWrapper.cs" />
+    <Compile Include="Wrappers\VortoWrapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
