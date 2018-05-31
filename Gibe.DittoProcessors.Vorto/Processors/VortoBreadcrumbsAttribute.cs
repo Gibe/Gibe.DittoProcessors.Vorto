@@ -37,15 +37,13 @@ namespace Gibe.DittoProcessors.Vorto.Processors
 
 			IEnumerable<BreadcrumbItemModel> breadcrumbs = new List<BreadcrumbItemModel>();
 
-			if (ValidDocumentType(content))
-				breadcrumbs = breadcrumbs.Concat(CurrentPage(content));
-
-			breadcrumbs =	breadcrumbs.Concat(AncestorsPages(content));
-
 			if (_autoGenerateHomeCrumb)
 				breadcrumbs = breadcrumbs.Concat(HomePage());
 
-			breadcrumbs.Reverse();
+			breadcrumbs = breadcrumbs.Concat(AncestorsPages(content).Reverse());
+
+			if (ValidDocumentType(content))
+				breadcrumbs = breadcrumbs.Concat(CurrentPage(content));
 
 			return breadcrumbs;
 		}
